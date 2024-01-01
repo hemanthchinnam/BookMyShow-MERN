@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
+
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Helmet } from 'react-helmet-async';
@@ -57,12 +57,12 @@ export default function SignupScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
-    <div className="container small-container"style={{ backgroundColor: 'pink' }} >  
+    <div className="small-container"style={{ backgroundColor: 'pink' }} >  
 
       <Helmet>
         <title>Sign Up </title>
       </Helmet>
-      <h1 className="my-3">Sign Up Profile</h1>
+      <h1 className="my-3">Sign Up!</h1>
       <form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="name">
           <Form.Label>Name</Form.Label>

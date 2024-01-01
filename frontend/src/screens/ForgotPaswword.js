@@ -16,11 +16,11 @@ const ForgotPasswordComponent = () => {
   };
 
   return (
-    <div>
+    <div className='forgot'>
       <h2>Forgot Password</h2>
-      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-      <button onClick={handleForgotPassword}>Send Reset Email</button>
-      <p>{message}</p>
+      <input  type="email" placeholder="Email" class="custom-input" size={50} onChange={(e) => setEmail(e.target.value)} />
+      <button class='forgot' onClick={handleForgotPassword}>Send Reset Email</button>
+      <p style={{ fontFamily: 'Times New Roman', color: 'snowwhite' }}>{message}</p>
     </div>
   );
 };
