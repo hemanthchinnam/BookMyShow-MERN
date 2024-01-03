@@ -24,4 +24,6 @@ Note: Need to start "monogd" before starting the project in order to successfull
        npm start 
 in both the terminal parts to start backend and frontend respectively.
 
+Give your email Id in user routes under forget password.
+
 After starting you can view the output in your browser running on "http://localhost:3000/".
