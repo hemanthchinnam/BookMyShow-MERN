@@ -76,13 +76,13 @@ userRouter.post('/forgot-password', async (req, res) => {
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'mukheshkumar8747@gmail.com',
-          pass: 'krmx wfuz rztu hpmt',
+          user: 'Your Email Id',
+          pass: 'Your Pass Key',
         },
       });
 
       const mailOptions = {
-        from: 'mukheshkumar8747@gmail.com',
+        from: 'Your Email Id',
         to: user.email,
         subject: 'Password Reset',
         text: `You are receiving this email because you (or someone else) have requested the reset of the password for your account.\n\n`
